@@ -20,6 +20,8 @@
     bc = branch-current
 
 [core]
+    editor = nano
+    excludesfile = ~/.gitignore
     editor = code -w
 
 [color]
@@ -61,7 +63,12 @@
 # git config --global --includes user.email
 
 [user]
-    name = Chase Adams
+	name = Christer Lingard
+	email = lingard.christer@gmail.com
+
+[github]
+  user = lingard
+
 [commit]
     gpgsign = true
 [gpg]
@@ -69,7 +76,4 @@
 
 [include]
     path = ~/.gitconfig.local
-
-[includeIf "gitdir:~/src/github.com/webflow/**"]
-    path = ~/.gitconfig.webflow.local
 

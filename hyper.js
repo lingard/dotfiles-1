@@ -1,7 +1,7 @@
 module.exports = {
   config: {
     fontSize: 10,
-    fontFamily: '"Fira Mono", "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontFamily: '"Fira Code", "Fira Mono", "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
     cursorShape: 'BLOCK',
     cursorBlink: false,
     css: '',
@@ -23,7 +23,6 @@ module.exports = {
       }
     `,
   },
-
   plugins: [
     'hyper-argon',
     'hyper-statusline'

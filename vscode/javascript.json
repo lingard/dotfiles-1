@@ -1,0 +1,62 @@
+{
+	"Add Flow comment": {
+		"prefix": "ff",
+		"body": [
+			"// @flow",
+			"$0"
+		]
+	},
+	"Import destructured": {
+		"prefix": "i",
+		"body": ["import { $2 } from '$1'$0"]
+	},
+	"Import default": {
+		"prefix": "id",
+		"body": ["import $2 from '$1'$0"]
+	},
+	"Export default": {
+		"prefix": "ed",
+		"body": ["export default $1"]
+	},
+	"Export default as": {
+		"prefix": "eda",
+		"body": ["export { default as $2 } from '$1'$0"]
+	},
+	"Export all": {
+		"prefix": "ea",
+		"body": ["export * from '$1'$0"]
+	},
+	"Import react": {
+		"prefix": "ir",
+		"body": ["import React from 'react'$0"]
+	},
+	"Flow Functional Component": {
+		"prefix": "fc",
+		"body": [
+			"type Props = {",
+			"	$1",
+			"}",
+			" ",
+			"const $2 = ({ $3 }: Props) => (",
+			"	$0",
+			")"
+		],
+		"description": "Create a functional component with flow prop types"
+	},
+	"Flow props": {
+		"prefix": "fp",
+		"body": [
+			"type Props = {",
+			"  $1",
+			"}",
+			"$0"
+		]
+	},
+	"Import flow type": {
+		"prefix": "ift",
+		"body": [
+			"import type { $2 } from '$1'",
+			"$0"
+		]
+	}
+}

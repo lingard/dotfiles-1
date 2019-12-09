@@ -1,28 +1,31 @@
 // Place your key bindings in this file to overwrite the defaults
 [
   {
-    "key": "ctrl+`",
-    "command": "workbench.action.focusActiveEditorGroup",
-    "when": "terminalFocus"
+    "key": "ctrl+x 2",
+    "command": "workbench.action.splitEditorDown"
   },
   {
-    "key": "ctrl+`",
-    "command": "workbench.action.terminal.focus",
-    "when": "!terminalFocus"
+    "key": "ctrl+x 3",
+    "command": "workbench.action.splitEditorRight"
   },
   {
-    "key": "ctrl+shift+`",
-    "command": "workbench.action.terminal.toggleTerminal",
-    "when": ""
+    "key": "ctrl+x o",
+    "command": "workbench.action.focusLeftGroup"
   },
   {
-    "key": "cmd+b",
-    "command": "-markdown.extension.editing.toggleBold",
-    "when": "editorTextFocus && !editorReadonly && editorLangId == 'markdown'"
+    "key": "cmd+k cmd+left",
+    "command": "-workbench.action.focusLeftGroup"
   },
   {
-    "key": "ctrl+r",
-    "command": "-extension.vim_ctrl+r",
-    "when": "editorTextFocus && vim.active && vim.use<C-r> && !inDebugRepl"
+    "key": "ctrl+x o",
+    "command": "workbench.action.focusRightGroup"
+  },
+  {
+    "key": "cmd+k cmd+right",
+    "command": "-workbench.action.focusRightGroup"
+  },
+  {
+    "key": "ctrl+x 1",
+    "command": "workbench.action.editorLayoutSingle"
   }
 ]

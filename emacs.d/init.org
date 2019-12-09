@@ -1,6 +1,6 @@
 #+TITLE: init.org
-#+AUTHOR: Chase Adams
-#+EMAIL: chasebuildssoftware@gmail.com
+#+AUTHOR: Christer Lingard
+#+EMAIL: lingard.christer@gmail.com
 
 * init.el
 :PROPERTIES:

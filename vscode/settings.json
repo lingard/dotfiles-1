@@ -38,6 +38,7 @@
     { "text": "FIXME" },
     { "text": "TODO" },
     { "text": "HACK" },
+    { "text": "NOTE" },
     { "text": "$FlowFixMe" },
     { "text": "$FlowIgnore" },
     { "text": "$FlowExpectError" },

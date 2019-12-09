@@ -1,25 +1,7 @@
 [
   {
     "name": "dotfiles",
-    "rootPath": "$home/src/github.com/chaseadamsio/dotfiles",
-    "paths": [],
-    "group": ""
-  },
-  {
-    "name": "chaseonsoftware.com",
-    "rootPath": "$home/src/github.com/chaseadamsio/chaseonsoftware.com",
-    "paths": [],
-    "group": ""
-  },
-  {
-    "name": "Dropbox",
-    "rootPath": "$home/Dropbox",
-    "paths": [],
-    "group": ""
-  },
-  {
-    "name": "chaseonsoftware.com content",
-    "rootPath": "$home/Dropbox/Apps/chaseadams.io",
+    "rootPath": "$home/dev/github.com/lingard/dotfiles",
     "paths": [],
     "group": ""
   }

@@ -1,0 +1,6 @@
+[submodule "zsh/honukai-iterm-zsh"]
+	path = zsh/honukai-iterm-zsh
+	url = https://github.com/oskarkrawczyk/honukai-iterm-zsh.git
+[submodule "zsh/completion"]
+	path = zsh/completion
+	url = https://github.com/zsh-users/zsh-completions.git

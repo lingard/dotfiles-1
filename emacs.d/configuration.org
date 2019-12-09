@@ -1,6 +1,6 @@
 #+TITLE: Emacs Configuration
-#+AUTHOR: Chase Adams
-#+EMAIL: realchaseadams@gmail.com
+#+AUTHOR: Christer Lingard
+#+EMAIL: lingard.christer@gmail.com
 
 * Package Initialization
 
