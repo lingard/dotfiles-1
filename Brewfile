@@ -26,7 +26,6 @@ cask "font-source-code-pro"
 cask "font-hack"
 cask "screenflow"
 cask "skitch"
-cask "mongodb"
 cask "dash"
 
 tap "homebrew/cask-fonts"
@@ -73,3 +72,5 @@ brew "zsh"
 
 mas "Xcode", id: 497799835
 mas "Day One", id: 1055511498
+mas "1Password", id: 443987910
+
