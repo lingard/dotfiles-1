@@ -86,6 +86,9 @@ install_oh_my_zsh() {
 
 get_dotfiles() {    
     echo "getting dotfiles..."
+
+    create_ssh_key
+
     test -L "$DOTFILES_ROOT" || (
         mkdir -p "$USER_REPOS_PATH"
         git clone git@github.com:lingard/dotfiles-1.git "$DOTFILES_ROOT"
