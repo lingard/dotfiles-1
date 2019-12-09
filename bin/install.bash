@@ -102,8 +102,9 @@ main() {
         usage
         exit 1
     fi
+    
 
-    cd "$DOTFILES_ROOT" && if [[ $cmd == "base" ]]; then
+    if [[ $cmd == "base" ]]; then
         base
     elif [[ $cmd == "dotfiles" ]]; then
         get_dotfiles
