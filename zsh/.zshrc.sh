@@ -4,13 +4,10 @@ USER_REPOS_PATH="$HOME/dev/github.com/lingard"
 DOTFILES_ROOT="$USER_REPOS_PATH/dotfiles-1"
 
 # Load main files.
-echo "Load start\t" $(gdate "+%s-%N")
 source "$DOTFILES_ROOT/zsh/startup.sh"
 echo "$DOTFILES_ROOT/zsh/startup.sh"
 source "$DOTFILES_ROOT/zsh/completion.sh"
 source "$DOTFILES_ROOT/zsh/highlight.sh"
-
-echo "Load end\t" $(gdate "+%s-%N")
 
 #autoload -U colors && colors
 
