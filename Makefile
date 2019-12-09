@@ -12,13 +12,14 @@ init:
 	test -L $(HOME)/.gitconfig || ln -s $(PWD)/gitconfig $(HOME)/.gitconfig
 	test -L $(HOME)/.gitignore || ln -s $(PWD)/.gitignore $(HOME)/.gitignore
 	test -L $(HOME)/.editorconfig || ln -s $(PWD)/.editorconfig $(HOME)/.editorconfig
-	test -L $(HOME)/~/.oh-my-zsh/themes/honukai.zsh-theme || ln -s $(PWD)/zsh/honukai-iterm-zsh/honukai.zsh-theme $(HOME)/~/.oh-my-zsh/themes/honukai.zsh-theme
-}
+	test -L $(HOME)/.oh-my-zsh/themes/honukai.zsh-theme || ln -s $(PWD)/zsh/honukai-iterm-zsh/honukai.zsh-theme $(HOME)/.oh-my-zsh/themes/honukai.zsh-theme
 
 clean:
 	rm -rf $(HOME)/.hammerspoon
-	rm -rf $(HOME)/.bash_profile
-	rm -rf $(HOME)/.bashrc
+	rm -rf $(HOME)/.zshenv.sh
+	rm -rf $(HOME)/.zshrc.sh
 	rm -rf $(VSCODECFGDIR)/projects.json $(VSCODECFGDIR)/keybindings.json $(VSCODECFGDIR)/settings.json $(VSCODECFGDIR)/snippets
 	rm -rf $(HOME)/.ssh/config_common
 	rm -rf $(HOME)/.gitconfig
+	rm -rf $(HOME)/.gitignore
+	rm -rf $(HOME)/.editorconfig
