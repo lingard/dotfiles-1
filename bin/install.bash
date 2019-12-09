@@ -91,7 +91,7 @@ get_dotfiles() {
 
     test -L "$DOTFILES_ROOT" || (
         mkdir -p "$USER_REPOS_PATH"
-        git clone git@github.com:lingard/dotfiles-1.git "$DOTFILES_ROOT"
+        git clone git@github.com:lingard/dotfiles-1.git "$DOTFILES_ROOT" --recursive
         cd "$DOTFILES_ROOT"
         git remote set-url origin git@github.com:lingard/dotfiles-1.git
         make
