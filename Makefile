@@ -12,7 +12,7 @@ init:
 	test -L $(HOME)/.gitconfig || ln -s $(PWD)/gitconfig $(HOME)/.gitconfig
 	test -L $(HOME)/.gitignore || ln -s $(PWD)/.gitignore $(HOME)/.gitignore
 	test -L $(HOME)/.editorconfig || ln -s $(PWD)/.editorconfig $(HOME)/.editorconfig
-	test -L $(HOME)/~/.oh-my-zsh/themes/honukai.zsh-theme || ln -s $(PWD)/zsh/honukai-iterm-zsh/honukai.zsh-theme $(HOME)/~/.oh-my-zsh/themes/honukai.zsh-theme
+	test -L $(HOME)/.oh-my-zsh/themes/honukai.zsh-theme || ln -s $(PWD)/zsh/honukai-iterm-zsh/honukai.zsh-theme $(HOME)/.oh-my-zsh/themes/honukai.zsh-theme
 }
 
 clean:
