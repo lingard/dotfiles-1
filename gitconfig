@@ -65,14 +65,15 @@
 [user]
 	name = Christer Lingard
 	email = lingard.christer@gmail.com
+	signingkey = EB11C755
 
 [github]
   user = lingard
 
-[commit]
-    gpgsign = true
-[gpg]
-    program = gpg
+# [commit]
+# 	gpgsign = true
+# [gpg]
+# 	program = gpg
 
 [include]
     path = ~/.gitconfig.local
