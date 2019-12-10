@@ -18,6 +18,7 @@ clean:
 	rm -rf $(HOME)/.hammerspoon
 	rm -rf $(HOME)/.zshenv
 	rm -rf $(HOME)/.zshrc
+	rm -rf $(HOME)/.emacs.d
 	rm -rf $(VSCODECFGDIR)/projects.json $(VSCODECFGDIR)/keybindings.json $(VSCODECFGDIR)/settings.json $(VSCODECFGDIR)/snippets
 	rm -rf $(HOME)/.ssh/config_common
 	rm -rf $(HOME)/.gitconfig
