@@ -1,14 +1,26 @@
 {
-  "editor.fontFamily": "Hack, 'Fira Mono', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontFamily": "Hack, 'Fira Code', Menlo, Monaco, 'Courier New', monospace",
   "typescript.validate.enable": false,
   "window.title": "${activeEditorLong}",
   "git.autofetch": true,
+  "editor.fontSize": 12,
+  "editor.tabSize": 2,
+  "editor.lineHeight": 24,
+  "editor.fontLigatures": true,
+  "explorer.decorations.badges": false,
+  "window.zoomLevel": 0,
+  "debug.node.autoAttach": "on",
+  "files.insertFinalNewline": true,
+  "prettier.singleQuote": true,
+  "editor.minimap.enabled": false,
+  "editor.scrollBeyondLastLine": false,
   // open JSON editor instead of visual picker
   "workbench.settings.editor": "json",
   "workbench.settings.openDefaultSettings": false,
   "explorer.openEditors.visible": 0, // hide the open editors panel
   "editor.formatOnSave": true,
   "editor.tabCompletion": "on",
+  "materialTheme.accent": "Sky",
   // disable validate because of TSLint and ESLint collision
   "javascript.validate.enable": false,
   "prettier.eslintIntegration": true,
@@ -29,20 +41,35 @@
   "flow.useLSP": true,
   "todohighlight.isEnable": true,
   "todohighlight.isCaseSensitive": true,
-
   "todohighlight.defaultStyle": {
     "color": "#FF8E8E",
     "backgroundColor": "#20242D"
   },
   "todohighlight.keywords": [
-    { "text": "FIXME" },
-    { "text": "TODO" },
-    { "text": "HACK" },
-    { "text": "NOTE" },
-    { "text": "$FlowFixMe" },
-    { "text": "$FlowIgnore" },
-    { "text": "$FlowExpectError" },
-    { "text": "FixMeAny" }
+    {
+      "text": "FIXME"
+    },
+    {
+      "text": "TODO"
+    },
+    {
+      "text": "HACK"
+    },
+    {
+      "text": "NOTE"
+    },
+    {
+      "text": "$FlowFixMe"
+    },
+    {
+      "text": "$FlowIgnore"
+    },
+    {
+      "text": "$FlowExpectError"
+    },
+    {
+      "text": "FixMeAny"
+    }
   ],
   "files.associations": {
     "Brewfile": "ruby",
@@ -52,13 +79,21 @@
   "vim.leader": "<space>",
   "vim.insertModeKeyBindings": [
     {
-      "before": ["j", "j"],
-      "after": ["<Esc>"]
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
     }
   ],
   "vim.normalModeKeyBindings": [
     {
-      "before": ["<leader>", "<leader>"],
+      "before": [
+        "<leader>",
+        "<leader>"
+      ],
       "after": [],
       "commands": [
         {
@@ -68,7 +103,10 @@
       ]
     },
     {
-      "before": ["<leader>", "b"],
+      "before": [
+        "<leader>",
+        "b"
+      ],
       "after": [],
       "commands": [
         {
@@ -78,7 +116,11 @@
       ]
     },
     {
-      "before": ["<leader>", "g", "s"],
+      "before": [
+        "<leader>",
+        "g",
+        "s"
+      ],
       "after": [],
       "commands": [
         {
@@ -88,7 +130,11 @@
       ]
     },
     {
-      "before": ["<leader>", "f", "f"],
+      "before": [
+        "<leader>",
+        "f",
+        "f"
+      ],
       "after": [],
       "commands": [
         {
@@ -98,7 +144,11 @@
       ]
     },
     {
-      "before": ["<leader>", "p", "p"],
+      "before": [
+        "<leader>",
+        "p",
+        "p"
+      ],
       "after": [],
       "commands": [
         {
@@ -108,7 +158,11 @@
       ]
     },
     {
-      "before": ["<leader>", "p", "e"],
+      "before": [
+        "<leader>",
+        "p",
+        "e"
+      ],
       "after": [],
       "commands": [
         {
@@ -118,7 +172,11 @@
       ]
     },
     {
-      "before": ["<leader>", "p", "f"],
+      "before": [
+        "<leader>",
+        "p",
+        "f"
+      ],
       "after": [],
       "commands": [
         {
@@ -128,7 +186,11 @@
       ]
     },
     {
-      "before": ["<leader>", "m", "t"],
+      "before": [
+        "<leader>",
+        "m",
+        "t"
+      ],
       "after": [],
       "commands": [
         {
@@ -138,7 +200,10 @@
       ]
     },
     {
-      "before": ["<leader>", "'"],
+      "before": [
+        "<leader>",
+        "'"
+      ],
       "after": [],
       "commands": [
         {
@@ -149,22 +214,27 @@
     }
   ],
   "vim.easymotion": true,
-  "markdown-table-formatter.markdownGrammarScopes": ["markdown", "plaintext"],
+  "markdown-table-formatter.markdownGrammarScopes": [
+    "markdown",
+    "plaintext"
+  ],
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "window.zoomLevel": 0,
   "breadcrumbs.enabled": true,
   "workbench.statusBar.feedback.visible": false,
   "diffEditor.renderSideBySide": false,
   "extensions.showRecommendationsOnlyOnDemand": true,
   /* DEMO/Screencast settings (defaults for me) */
   // "workbench.activityBar.visible": true,
-  "editor.rulers": [80, 120],
-  "editor.minimap.enabled": false,
+  "editor.rulers": [
+    80,
+    120
+  ],
   "workbench.editor.showIcons": false,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.colorTheme": "Neon Night"
+  "workbench.colorTheme": "One Dark Vivid",
+  "workbench.activityBar.visible": false
   /* DEMO/Screencast settings */
   // "window.zoomLevel": 2,
   // "workbench.statusBar.visible": false,
