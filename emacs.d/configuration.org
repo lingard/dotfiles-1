@@ -31,6 +31,13 @@ I use [[https://github.com/jwiegley/use-package][=use-package=]] to install, req
     (setq use-package-always-ensure t)
 #+END_SRC
 
+* Setup paths
+
+Make sure the path to all binaries are added
+
+#+BEGIN_SRC emacs-lisp
+  (add-to-list 'exec-path "/usr/local/bin")
+#+END_SRC
 
 * Setup Core
 
@@ -144,23 +151,6 @@ Highlight the current line.
       (find-file-existing "~/Dropbox/planner.org"))
 #+END_SRC
 
-* Setup Evil
-
-I came from the editor vim, so I use vim bindings with evil.
-
-#+BEGIN_SRC emacs-lisp
-  (use-package evil
-    :ensure t
-    :init
-    (evil-mode 1)
-    (use-package evil-commentary
-      :ensure t
-      :config
-      (evil-commentary-mode)
-      )
-    )
-#+END_SRC
-
 * Git
 
 ** Git Gutter
@@ -219,15 +209,15 @@ I came from the editor vim, so I use vim bindings with evil.
     :ensure t
     :config
     (setq org-capture-templates
-	  '(("b" "Bookmark" entry (file+headline "~/Dropbox/inbox.org" "Bookmarks")
+	  '(("b" "Bookmark" entry (file+headline "~/Library/Mobile\ Documents/com~apple~CloudDocs/Notes/inbox.org" "Bookmarks")
 	     "* %?\n:PROPERTIES:\n:CREATED: %U\n:END:\n\n" :empty-lines 1)
 	    ("t" "Task" entry (file+headline "~/Dropbox/todo.org" "Inbox")
 	     "* TODO %?\n  %i\n  %a\n")
-	    ("j" "Journal" entry (file+olp+datetree "~/Dropbox/planner.org" "Journal")
+	    ("j" "Journal" entry (file+olp+datetree "~/Library/Mobile\ Documents/com~apple~CloudDocs/Notes/planner.org" "Journal")
 	     "* %?\nEntered on %U\n  %i\n  %a")))
     (custom-set-variables
-     '(org-agenda-files (quote ("~/Dropbox/todo.org")))
-     '(org-default-notes-file "~/Dropbox/notes.org")
+     '(org-agenda-files (quote ("~/Library/Mobile\ Documents/com~apple~CloudDocs/Notes/todo.org")))
+     '(org-default-notes-file "~/Library/Mobile\ Documents/com~apple~CloudDocs/Notes/notes.org")
      '(org-agenda-ndays 7)
      '(org-deadline-warning-days 14)
      '(org-agenda-show-all-dates t)
@@ -430,9 +420,7 @@ Projectile is used for project management. It's a great way to access projects q
 #+END_SRC
 
 * General
-General is key bindings that's useful for key definitions, especially for EViL.
-
-I mostly borrow these bindings as I come across M-x commands I find myself using from the [[https://github.com/syl20bnr/spacemacs/blob/c7a103a772d808101d7635ec10f292ab9202d9ee/layers/%2Bdistributions/spacemacs-base/keybindings.el][spacemacs/keybindings.el]] and the [[https://github.com/syl20bnr/spacemacs/blob/master/doc/DOCUMENTATION.org#discovering][Spacemacs Docs on Github.]]
+General is key bindings that's useful for key definitions.
 
 #+BEGIN_SRC emacs-lisp
 
@@ -478,14 +466,6 @@ I mostly borrow these bindings as I come across M-x commands I find myself using
      "wD" '(delete-other-windows :which-key "delete other windows")
      "wv" '(split-window-right :which-key "split vertical")
      "ws" '(split-window-below :which-key "split below")
-     "wh" '(evil-window-left :which-key "focus left")
-     "w <left>" '(evil-window-left :which-key "focus left")
-     "wj" '(evil-window-down :which-key "focus down")
-     "w <down>" '(evil-window-down :which-key "focus down")
-     "wk" '(evil-window-up :which-key "focus up")
-     "w <up>" '(evil-window-up :which-key "focus up")
-     "wl" '(evil-window-right :which-key "focus right")
-     "w <right>" '(evil-window-right :which-key "focus right")
 
      "y" '(nil :which-key "yasnippet")
      "yn" '(yas-new-snippet :which-key "new snippet")
@@ -503,7 +483,6 @@ Clean up mode-line by removing a bunch of minor modes I anticipate to be there a
     (diminish 'projectile-mode)
     (diminish 'undo-tree-mode)
     (diminish 'which-key-mode)
-    (diminish 'evil-org-mode)
     (diminish 'org-mode)
     (diminish 'rainbow-mode)
     (diminish 'yas-minor-mode)
@@ -560,8 +539,6 @@ Clean up mode-line by removing a bunch of minor modes I anticipate to be there a
   (add-to-list 'auto-mode-alist '("main.workflow" . hcl-mode))
 
   (use-package magit)
-  (use-package evil-magit
-    :after '(evil magit))
 
   (use-package github-browse-file)
 
