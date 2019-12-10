@@ -4,3 +4,6 @@
 [submodule "zsh/completion"]
 	path = zsh/completion
 	url = https://github.com/zsh-users/zsh-completions.git
+[submodule "zsh/highlight"]
+	path = zsh/highlight
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
