@@ -594,6 +594,6 @@ Clean up mode-line by removing a bunch of minor modes I anticipate to be there a
 
 I do this last because I can live without my theme if I've broken it but not without the other things I load before it.
 #+BEGIN_SRC emacs-lisp
-  (add-to-list 'custom-theme-load-path "~/src/github.com/chaseadamsio/dotfiles/emacs.d/themes")
+  (add-to-list 'custom-theme-load-path "~/dev/github.com/lingard/dotfiles-1/emacs.d/themes")
   (load-theme 'neon-night t)
 #+END_SRC

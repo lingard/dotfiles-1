@@ -24,7 +24,7 @@ First, as with all of my tangled files, make sure it's clear that this file is a
 Now we'll create a temporary buffer with the =emacs/configuration.org= contents...
 #+BEGIN_SRC emacs-lisp
   (with-temp-buffer
-    (insert-file "~/src/github.com/chaseadamsio/dotfiles/emacs.d/configuration.org")
+    (insert-file "~/dev/github.com/lingard/dotfiles-1/emacs.d/configuration.org")
 #+END_SRC
 
 start at the =point-min= or first accessible point in the buffer and go forward one line until we've reached the end of the buffer (=eobp=)...
