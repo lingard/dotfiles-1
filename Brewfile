@@ -56,6 +56,7 @@ brew "zsh"
 brew "pt"
 brew "rg"
 brew "fzf"
+brew "trash"
 brew "yarn"
 brew "ccat"
 brew "rename" # util for batch renaming files
