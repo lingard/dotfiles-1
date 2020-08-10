@@ -1,6 +1,6 @@
 {
   "editor.fontFamily": "Hack, 'Fira Code', Menlo, Monaco, 'Courier New', monospace",
-  "typescript.validate.enable": false,
+  "typescript.validate.enable": true,
   "window.title": "${activeEditorLong}",
   "git.autofetch": true,
   "editor.fontSize": 12,
@@ -23,7 +23,9 @@
   "materialTheme.accent": "Sky",
   // disable validate because of TSLint and ESLint collision
   "javascript.validate.enable": false,
-  "prettier.eslintIntegration": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.codeActionsOnSave.mode": "all",
+  "stylelint.autoFixOnSave": true,
   "gitlens.codeLens.enabled": false,
   "eslint.packageManager": "yarn",
   "[markdown]": {
@@ -73,7 +75,8 @@
   ],
   "files.associations": {
     "Brewfile": "ruby",
-    "*.alfredappearance": "json"
+    "*.alfredappearance": "json",
+    "*.leex": "HTML (Eex)"
   },
   "vim.hlsearch": true,
   "vim.leader": "<space>",
@@ -223,8 +226,6 @@
   "workbench.statusBar.feedback.visible": false,
   "diffEditor.renderSideBySide": false,
   "extensions.showRecommendationsOnlyOnDemand": true,
-  /* DEMO/Screencast settings (defaults for me) */
-  // "workbench.activityBar.visible": true,
   "editor.rulers": [
     80,
     120
@@ -234,11 +235,31 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.colorTheme": "One Dark Vivid",
-  "workbench.activityBar.visible": false
-  /* DEMO/Screencast settings */
-  // "window.zoomLevel": 2,
-  // "workbench.statusBar.visible": false,
-  // "editor.lineNumbers": "off",
-  // "gitlens.currentLine.enabled": false,
-  // "scm.diffDecorations": "none"
+  "workbench.activityBar.visible": false,
+  "editor.codeActionsOnSave": {
+    "mode": "all",
+    "source.fixAll.eslint": true
+  },
+  "files.autoSave": "off",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    {
+      "language": "typescript",
+      "autoFix": true
+    },
+    {
+      "language": "typescriptreact",
+      "autoFix": true
+    }
+  ],
+  "tslint.packageManager": "yarn",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.editor.showTabs": false,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
